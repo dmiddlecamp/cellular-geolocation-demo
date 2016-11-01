@@ -1,0 +1,20 @@
+{
+  "event": "get_location",
+  "mydevices": true,
+  "url": "https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_KEY_HERE",
+  "requestType": "POST",
+  "responseTemplate": "{{location.lat}},{{location.lng}},{{accuracy}}",
+  "json": {
+	"cellTowers": [{
+			"cellId": "{{id}}",
+			"locationAreaCode": "{{lac}}",
+			"mobileCountryCode": "{{mcc}}",
+			"mobileNetworkCode": "{{mnc}}"
+		}]
+  },
+  "noDefaults": true,
+  "rejectUnauthorized": true
+}
+
+
+
