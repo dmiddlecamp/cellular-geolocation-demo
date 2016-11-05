@@ -1,4 +1,11 @@
 //
+
+//
+//  NOTE!  Don't leave this running forever, it'll keep trying until it gets a fix!  It might consume a lot of data on accident.
+// Leaving this note here until I add a max number of retries.
+//
+
+
 #pragma PARTICLE_NO_PREPROCESSOR
 
 #define ATTEMPT_FREQUENCY 20 * 1000
